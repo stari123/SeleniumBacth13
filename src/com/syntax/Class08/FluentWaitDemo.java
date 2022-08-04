@@ -10,6 +10,8 @@ import java.time.Duration;
 
 public class FluentWaitDemo {
 
+    // fluent wait is outdated not used much.
+
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         Wait<WebDriver> wait = new FluentWait<>(driver)

@@ -1,3 +1,4 @@
+
 package com.syntax.Class08;
 
 import org.openqa.selenium.By;
@@ -7,13 +8,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomeWork1Gennady {
+public class Hw1 {
+        //solution from Gennady
+
     /* go to https://the-internet.herokuapp.com/dynamic_controls
-    click on checkbox and click on remove
-    verify the text
-    click on enable verify the textbox is enabled
-    enter text and click disable
-    verify the textbox is disabled      */
+        click on checkbox and click on remove
+        verify the text
+        click on enable verify the textbox is enabled
+        enter text and click disable
+        verify the textbox is disabled      */
 
     static String url = "https://the-internet.herokuapp.com/dynamic_controls";
 

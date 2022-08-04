@@ -13,7 +13,7 @@ a certain condition is met or the given time is achieved
 * sign in xpath is a wild card which can Identify any tagname
 //*[@name = 'websubmit']
 
-Fluent wait -- global wait ( it is outdated, not ued much)
+Fluent wait -- global wait ( it is outdated, not used much)
 it is used to tell the webdriver to wait for certain condition as wel as its frequency
 before throwing an exception
 

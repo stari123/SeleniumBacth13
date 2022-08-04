@@ -9,16 +9,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExplicitWaitTask {
 
-    /**
-     *  navigate http://syntaxprojects.com/dynamic-elements-loading.php
+    /*  navigate http://syntaxprojects.com/dynamic-elements-loading.php
      *  click on start button
      *  get the text
-     *  print out in console
-     */
+     *  print out in console     */
+
     public static String url = "http://syntaxprojects.com/dynamic-elements-loading.php";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
 
@@ -34,5 +33,5 @@ public class ExplicitWaitTask {
         WebElement welcome = driver.findElement(By.xpath("//*[contains(text(), 'Welcome')]"));
         System.out.println(welcome.getText());
     }
-}       //wild card: sometimes header or text focnt may chance, e.g. h4 in commented xpath. in these case
-        // you can use * instead of h4 (or any h?) which is called wild card.
+}       //wild card: sometimes header or text font may chance, e.g. h4 can changeto h2, h3 (font size)
+        // in commented xpath. in these case you can use * instead of h4 (or any h?) which is called wild card.
